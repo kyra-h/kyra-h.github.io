@@ -1,0 +1,23 @@
+header {
+    background-color: var(--background2color);
+    padding: 10px;
+    border-bottom: 1px solid var(--linecolor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;   
+    flex-direction: column;
+}
+
+header h1 {
+    font-size: 2em;
+    text-align: center;
+}
+
+header p{
+    text-align: center;
+}
+
+.nav-links i {
+  margin-right: 0.5rem; 
+}

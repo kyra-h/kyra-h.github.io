@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap');
 
 :root {
-    --background1color: #F7F7F8;  /* body  */
-    --background2color: #CCCAD3;  /* header/footer  */
-    --linecolor: #2A2A2E;         /*  lines */
-    --buttoncolor: #9296C4;          /* btn background */
-    --buttonhovercolor: #666cb7;     /* btn hover background */
+    --background1color: #F7F7F8;        /* body  */
+    --background2color: #CCCAD3;        /* header/footer  */
+    --linecolor: #2A2A2E;               /*  lines */
+    --buttoncolor: #9296C4;             /* btn background */
+    --buttonhovercolor: #666cb7;        /* btn hover background */
     --buttoncolor2: #8FA2BC;
     --accentcolor: #8FA2BC; 
     --textcolor: #1C1C1F;            
-    --darkcolor: #2A2A2E;   /*for underline for links */
+    --darkcolor: #2A2A2E;               /*for underline for links */
     --linkhovercolor: #7b7b81;
 }
 
@@ -31,7 +31,7 @@ html, body {
     height: 100%;
 }
 
-header {
+/* header {
     background-color: var(--background2color);
     padding: 10px;
     border-bottom: 1px solid var(--linecolor);
@@ -44,8 +44,9 @@ header {
 
 header h1 {
     font-size: 2em;
-    text-align: center;
-}
+    text-align: center; */
+/* } */
+
 header p{
     text-align: center;
 }
@@ -103,6 +104,44 @@ a:hover {
 
 
 
+
+
+
+
+
+.breadcrumb {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    position: absolute;
+    left: 20px;
+    bottom: 0px;
+    transform: translateY(-50%);
+}
+
+.breadcrumb a {
+    color: var(--textcolor);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: color 0.2s ease;
+    border-bottom: 1px dotted var(--darkcolor); 
+}
+
+.breadcrumb a:hover {
+    color: var(--linkhovercolor);
+}
+
+
+
+
+
+
+
 .game-container {
     background-color: var(--gamebgcolor);
     border: 1px solid var(--gamebordercolor);
@@ -124,9 +163,8 @@ a:hover {
     background-color: var(--buttonhovercolor);
 }
 
-footer {
-    background-color: var(--background2color);
-    text-align: center;
-    padding: 10px;
-    border-top: 1px solid var(--linecolor);
+.center {
+  margin: auto;
+  padding: 10px;
+  text-align: center;
 }

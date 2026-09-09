@@ -1,0 +1,20 @@
+.round-button {
+    border-radius: 50%;
+    /* background-color: #b2b5ce; */
+    background-color: var(--buttoncolor);
+    /* border-color: #2a2a2e; */
+    border: none;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+}
+.round-button:hover {
+    background-color: #8f92b0; /* darker/lighter shade on hover */
+    transform: scale(1.1);      /* slightly bigger */
+    cursor: pointer;            /* change cursor */
+}
+
+
